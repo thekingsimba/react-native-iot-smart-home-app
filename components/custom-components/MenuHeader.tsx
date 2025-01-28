@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 import { Box } from "../ui/box";
-import { Icon, EditIcon } from "@/components/ui/icon";
+import { Icon, EditIcon, MenuIcon, CalendarDaysIcon } from "@/components/ui/icon";
 
 type MenuHeaderProps = {
     message: string;
@@ -9,18 +9,12 @@ type MenuHeaderProps = {
 const MenuHeader = () => {
     
     return (
-        <View style={styles.container} className="bg-gradient-to-b from-cyan-500 to-blue-500 min-h-11 rounded-lg mt-4 mb-4 pl-4 pr-4 pt-3" >
-            <Box  >
-                <Icon as={EditIcon} size="md"  />
+        <View style={styles.container} className="min-h-12 rounded-lg mt-4 mb-4 pt-2" >
+            <Box>
+                <Icon as={MenuIcon} className="text-typography-50 w-8 h-8" />
             </Box>
             <Box  >
-                <Icon as={EditIcon} size="md"  />
-            </Box>
-            <Box  >
-                <Icon as={EditIcon} size="md"  />
-            </Box>
-            <Box  >
-                <Icon as={EditIcon} size="md"  />
+                <Icon as={CalendarDaysIcon} className="text-typography-50 w-8 h-8" />
             </Box>
         </View>
     );

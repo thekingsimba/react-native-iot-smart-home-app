@@ -1,24 +1,32 @@
 import { Box } from "../ui/box";
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
+// import IconDisplay from "./IconDisplayer";
+import { co2Icon } from "@/assets/svg-icon/co2-icon";
+import { sunCloudyIcon } from "@/assets/svg-icon/sun-cloudy";
+import IconShowcase from "./IconDisplayer";
+import { waterMeterIcon } from "@/assets/svg-icon/water-meter";
+import { waterDropIcon } from "@/assets/svg-icon/water-drop";
 
 const IndicatorBoxes = () => {
 
   return (
     <View style={styles.gridContainer}>
-        <Box className="bg-gradient-to-b from-cyan-500 to-blue-500 min-h-20 w-36 rounded-md mt-4">
-            <Text> just </Text>
-        </Box>
-        <Box className="bg-gradient-to-b from-cyan-500 to-blue-500 min-h-20  w-36 rounded-md mt-4">
-            <Text> just </Text>
-        </Box>
+      <Box className="bg-gradient-to-b from-cyan-500 to-blue-500 min-h-20 w-36 rounded-md mt-4 p-1">
+        <IconShowcase svgIcon={sunCloudyIcon} color="#FFC107" width="50" height="50" />
+      </Box>
 
-        <Box className="bg-gradient-to-b from-cyan-500 to-blue-500 min-h-20 w-36  rounded-md  mt-6">
-            <Text> just </Text>
-        </Box>
-        <Box className="bg-gradient-to-b from-cyan-500 to-blue-500 min-h-20 w-36  rounded-md mt-6">
-            <Text> just </Text>
-        </Box>
+      <Box className="bg-gradient-to-b from-cyan-500 to-blue-500 min-h-20 w-36 rounded-md mt-4 p-1">
+        <IconShowcase svgIcon={co2Icon} color="#FFC107" width="50" height="50" />
+      </Box>
+
+      <Box className="bg-gradient-to-b from-cyan-500 to-blue-500 min-h-20 w-36 rounded-md mt-4 p-1">
+        <IconShowcase svgIcon={waterMeterIcon} color="#FFC107" width="50" height="50" />
+      </Box>
+
+      <Box className="bg-gradient-to-b from-cyan-500 to-blue-500 min-h-20 w-36 rounded-md mt-4 p-1" >
+        <IconShowcase svgIcon={waterDropIcon} color="#FFC107" width="50" height="50" />
+      </Box>
     </View>
   );
 };
