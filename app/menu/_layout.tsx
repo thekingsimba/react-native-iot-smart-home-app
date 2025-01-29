@@ -7,7 +7,6 @@ const RootLayout = () => {
         <GluestackUIProvider>
             <Stack>
                 <Stack.Screen name="index" options={{ headerShown: false }} />
-                <Stack.Screen name="menu/smartHome" options={{ headerShown: false }} />
             </Stack>
         </GluestackUIProvider>
     )

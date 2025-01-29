@@ -8,15 +8,11 @@ import IndicatorBoxes from '@/components/custom-components/IndicatorBoxes';
 import AirQualityChart from '@/components/custom-components/AirQualityChart';
 import CircleButton from '@/components/custom-components/CircleButton';
 import MenuHeader from '@/components/custom-components/MenuHeader';
-import { Link } from 'expo-router';
 
-export default function App() {
+export default function Index() {
   return (
     <ScrollView style={styles.container}>
-        <MenuHeader/> 
-        <DateTimeDisplay/> 
-        <IndicatorBoxes/>
-        <AirQualityChart/>
+      <IndicatorBoxes />
     </ScrollView>
   );
 }
