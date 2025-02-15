@@ -1,18 +1,11 @@
 import React from 'react';
-import { Center } from '@/components/ui/center';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
-import { Button, ButtonText } from '@/components/ui/button';
-import DateTimeDisplay from '@/components/custom-components/DisplayDate';
-import { Box } from '@/components/ui/box';
-import IndicatorBoxes from '@/components/custom-components/IndicatorBoxes';
-import AirQualityChart from '@/components/custom-components/AirQualityChart';
-import CircleButton from '@/components/custom-components/CircleButton';
-import MenuHeader from '@/components/custom-components/MenuHeader';
+import MenuProductShowcase from '@/components/custom-components/MenuProductShowcase';
 
 export default function Index() {
   return (
     <ScrollView style={styles.container}>
-      <IndicatorBoxes />
+      <MenuProductShowcase />
     </ScrollView>
   );
 }

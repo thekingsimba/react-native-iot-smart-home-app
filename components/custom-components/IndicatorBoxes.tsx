@@ -1,7 +1,6 @@
 import { Box } from "../ui/box";
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
-// import IconDisplay from "./IconDisplayer";
 import { co2Icon } from "@/assets/svg-icon/co2-icon";
 import { sunCloudyIcon } from "@/assets/svg-icon/sun-cloudy";
 import IconShowcase from "./IconDisplayer";
@@ -9,6 +8,7 @@ import { waterMeterIcon } from "@/assets/svg-icon/water-meter";
 import { waterDropIcon } from "@/assets/svg-icon/water-drop";
 
 const IndicatorBoxes = () => {
+
 
   return (
     <View style={styles.gridContainer}>
