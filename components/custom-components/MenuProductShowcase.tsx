@@ -6,24 +6,64 @@ import { waterMeterIcon } from "@/assets/svg-icon/water-meter";
 import { waterDropIcon } from "@/assets/svg-icon/water-drop";
 import { smartHomeIcon } from "@/assets/svg-icon/smart-home";
 import { smartCarIcon } from "@/assets/svg-icon/smart-car";
+import { smartFarmIcon } from "@/assets/svg-icon/smart-farm";
+import { smartIndustryIcon } from "@/assets/svg-icon/smart-industry";
+import { smartHealthIcon } from "@/assets/svg-icon/smart-health";
+import { smartCityIcon } from "@/assets/svg-icon/smart-city";
+import { smartControllerIcon } from "@/assets/svg-icon/smart-controller";
+import { smartCameraIcon } from "@/assets/svg-icon/smart-camera";
 
 const MenuProductShowcase = () => {
     return (
         <View style={styles.gridContainer}>
             <Box className="bg-gradient-to-b from-cyan-500 to-blue-500 min-h-20 w-36 rounded-md mt-4 p-1">
-                <IconShowcase svgIcon={smartHomeIcon} color="#FFC107" width="50" height="50" />
+                <IconShowcase svgIcon={smartHomeIcon} color="#FFF" width="50" height="50" />
             </Box>
 
             <Box className="bg-gradient-to-b from-cyan-500 to-blue-500 min-h-20 w-36 rounded-md mt-4 p-1">
-                <IconShowcase svgIcon={smartCarIcon} color="#FFC107" width="50" height="50" />
+                <IconShowcase svgIcon={smartCarIcon} color="#FFF" width="50" height="50" />
             </Box>
 
             <Box className="bg-gradient-to-b from-cyan-500 to-blue-500 min-h-20 w-36 rounded-md mt-4 p-1">
-                <IconShowcase svgIcon={waterMeterIcon} color="#FFC107" width="50" height="50" />
+                <IconShowcase svgIcon={smartFarmIcon} color="#FFF" width="70" height="70" />
+            </Box>
+
+
+            <Box className="bg-gradient-to-b from-cyan-500 to-blue-500 min-h-20 w-36 rounded-md mt-4 p-1">
+                <IconShowcase svgIcon={smartIndustryIcon} color="#FFF" width="70" height="70" />
+            </Box>
+
+
+            <Box className="bg-gradient-to-b from-cyan-500 to-blue-500 min-h-20 w-36 rounded-md mt-4 p-1">
+                <IconShowcase svgIcon={smartHealthIcon} color="#FFF" width="70" height="70" />
             </Box>
 
             <Box className="bg-gradient-to-b from-cyan-500 to-blue-500 min-h-20 w-36 rounded-md mt-4 p-1" >
-                <IconShowcase svgIcon={waterDropIcon} color="#FFC107" width="50" height="50" />
+                <IconShowcase svgIcon={smartCityIcon} color="#FFF" width="70" height="70" />
+            </Box>
+
+            <Box className="bg-gradient-to-b from-cyan-500 to-blue-500 min-h-20 w-36 rounded-md mt-4 p-1" >
+                <IconShowcase svgIcon={smartControllerIcon} color="#FFF" width="70" height="70" />
+            </Box>
+
+            <Box className="bg-gradient-to-b from-cyan-500 to-blue-500 min-h-20 w-36 rounded-md mt-4 p-1" >
+                <IconShowcase svgIcon={smartCameraIcon} color="#FFF" width="70" height="70" />
+            </Box>
+
+            <Box className="bg-gradient-to-b from-cyan-500 to-blue-500 min-h-20 w-36 rounded-md mt-4 p-1" >
+                <IconShowcase svgIcon={smartCityIcon} color="#FFF" width="70" height="70" />
+            </Box>
+
+            <Box className="bg-gradient-to-b from-cyan-500 to-blue-500 min-h-20 w-36 rounded-md mt-4 p-1" >
+                <IconShowcase svgIcon={smartCityIcon} color="#FFF" width="70" height="70" />
+            </Box>
+
+            <Box className="bg-gradient-to-b from-cyan-500 to-blue-500 min-h-20 w-36 rounded-md mt-4 p-1" >
+                <IconShowcase svgIcon={smartCityIcon} color="#FFF" width="70" height="70" />
+            </Box>
+
+            <Box className="bg-gradient-to-b from-cyan-500 to-blue-500 min-h-20 w-36 rounded-md mt-4 p-1" >
+                <IconShowcase svgIcon={smartCityIcon} color="#FFF" width="70" height="70" />
             </Box>
         </View>
     );
